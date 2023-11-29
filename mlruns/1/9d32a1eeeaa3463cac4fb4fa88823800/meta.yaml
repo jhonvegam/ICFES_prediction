@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/1/9d32a1eeeaa3463cac4fb4fa88823800/artifacts
+end_time: 1701217902848
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 9d32a1eeeaa3463cac4fb4fa88823800
+run_name: gifted-yak-108
+run_uuid: 9d32a1eeeaa3463cac4fb4fa88823800
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701217820440
+status: 3
+tags: []
+user_id: jgvm

@@ -1,4 +1,4 @@
-;cole_naturaleza;cole_bilingue;cole_calendario;cole_jornada;fami_tieneautomovil;fami_estratovivienda;fami_tieneinternet;fami_tienecomputador;estu_edad_cat;desemp_ingles;avg_punt_global
+;cole_naturaleza;cole_bilingue;cole_calendario;cole_jornada;fami_tieneautomovil;fami_estratovivienda;fami_tieneinternet;fami_tienecomputador;estu_edad_cat;desemp_ingles;target
 0;OFICIAL;N;A;UNICA;No;Estrato 1 y 2;No;No;<= 25;A-;Medium
 1;OFICIAL;N;A;UNICA;No;Estrato 1 y 2;No;No;<= 25;A1;High
 2;OFICIAL;N;A;UNICA;No;Estrato 1 y 2;No;No;<= 25;A2;High
