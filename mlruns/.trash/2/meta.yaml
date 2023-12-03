@@ -1,0 +1,7 @@
+artifact_location: ./mlruns/2
+creation_time: 1701218307180
+experiment_id: '2'
+last_update_time: 1701377893768
+lifecycle_stage: active
+name: sklearn-K2
+tags: {}

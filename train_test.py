@@ -17,26 +17,3 @@ train, test = train_test_split(df, test_size=0.2, random_state=101)
 
 train.to_csv("train.csv", sep = ";", index = False)
 test.to_csv("test.csv", sep = ";", index = False)
-
-
-# #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# #Modelo con PUNTAJES
-# #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# from pgmpy.metrics import structure_score
-
-# print("\n* MODELO ORIGINAL - PUNTJAE: BIC \n")
-# print(structure_score(mod_fit_mv, train, scoring_method="bic"))
-
-# print("\n* MODELO ORIGINAL - PUNTJAE: K2 \n")
-# print(structure_score(mod_fit_mv, train, scoring_method="k2"))
-
-
-# #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# # SERIALIZACIÓN
-# #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# import pickle
-
-# filename='serializacion/modelo1-original.pkl'
-# with open(filename,'wb') as file:
-#     pickle.dump(mod_fit_mv, file)
-#     file.close()

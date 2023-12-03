@@ -6,6 +6,7 @@ from pgmpy.estimators import HillClimbSearch
 from pgmpy.estimators import K2Score
 
 from infer import inferencia
+from infer import prediccion_dash_infer
 import metricas as m
 
 df = pd.read_csv("train.csv", sep = ";")
@@ -54,6 +55,7 @@ infer = VariableElimination(modelo)
 
 test_fit = test[list(estimated_modelh.nodes())]
 
+"""""""""""
 pred = inferencia(modelo, test_fit)
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -79,3 +81,9 @@ filename='serializacion/modelo2-k2.pkl'
 with open(filename,'wb') as file:
     pickle.dump(modelo, file)
     file.close()
+"""""""""
+print("prueba")
+
+
+diccionario = ["No","A","UNICA","No","Estrato 1 y 2","Si","No","<= 25","A2"]
+print(prediccion_dash_infer(modelo, test_fit, diccionario))

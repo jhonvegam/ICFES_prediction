@@ -1,0 +1,6 @@
+artifact_location: ./mlruns/4
+creation_time: 1701378763984
+experiment_id: '4'
+last_update_time: 1701378763984
+lifecycle_stage: active
+name: sklearn-BIC

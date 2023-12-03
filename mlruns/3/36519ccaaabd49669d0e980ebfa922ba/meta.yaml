@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/3/36519ccaaabd49669d0e980ebfa922ba/artifacts
+end_time: 1701378207455
+entry_point_name: ''
+experiment_id: '3'
+lifecycle_stage: active
+run_id: 36519ccaaabd49669d0e980ebfa922ba
+run_name: able-dolphin-381
+run_uuid: 36519ccaaabd49669d0e980ebfa922ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701378113504
+status: 3
+tags: []
+user_id: jgvm
