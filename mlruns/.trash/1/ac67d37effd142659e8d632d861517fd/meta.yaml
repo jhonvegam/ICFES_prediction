@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/1/ac67d37effd142659e8d632d861517fd/artifacts
+end_time: 1701217544162
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: ac67d37effd142659e8d632d861517fd
+run_name: capable-stag-29
+run_uuid: ac67d37effd142659e8d632d861517fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701217454813
+status: 4
+tags: []
+user_id: jgvm

@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/4/86ad08901177444fbf84cc746788cc93/artifacts
+end_time: 1701378844907
+entry_point_name: ''
+experiment_id: '4'
+lifecycle_stage: active
+run_id: 86ad08901177444fbf84cc746788cc93
+run_name: hilarious-pug-781
+run_uuid: 86ad08901177444fbf84cc746788cc93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701378764012
+status: 3
+tags: []
+user_id: jgvm
