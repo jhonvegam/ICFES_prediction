@@ -21,14 +21,10 @@ def inferencia(modelo, test):
         pred_test = infer.map_query(["target"], 
                             evidence=evidencias, show_progress=False)
         
-        #pred_test = infer.query(['target'], evidence=evidencias)
         probabilidadesclases = infer.query(['target'], evidence=evidencias)
-        #probs = 
-        print(max(probabilidadesclases.values))
-        pred.append(pred_test["target"])
-        #prob.append(pred_test)
 
-    #print(prob[0])
+        pred.append(pred_test["target"])
+
     return pred
  
 #Función que pasa la predicción según los valores introducidos en el dash
