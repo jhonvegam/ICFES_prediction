@@ -20,47 +20,14 @@ import dash_mantine_components as dmc
 import pickle
 from infer import prediccion_dash_infer
 
-# Read model from PKL file 
-# filename='serializacion\modelo1-original.pkl'
-# file = open(filename, 'rb')
-# modelo = pickle.load(file)
-# file.close()
+#Read model from PKL file 
+filename='despliegue/serializacion/modelo-PC.pkl'
+file = open(filename, 'rb')
+modelo = pickle.load(file)
+file.close()
 
 result =  pd.read_csv("data_discreta.csv", header = 0, index_col=0, sep=";")
-""" 
-#region last proyect read data
-df_disc = pd.DataFrame(result, columns=['course', 'attendance', 'previous_qualification_grade', 'displaced', 
-    'tuition_fees_up_to_date', 'scholarship_holder', 'curricular_units_1st_sem_evaluations', 
-    'curricular_units_1st_sem_grade', 'unemployment_rate', 'inflation_rate', 'gdp','target'])
 
-course_list = df_disc['course'].unique().tolist()
-course_dict = {
-    33: "Biofuel Production Technologies",  # Ciencias exactas
-    171: "Animation and Multimedia Design", # Diseño
-    8014: "Social Service (evening attendance)", # Ciencias sociales
-    9003: "Agronomy", # Ciencias agrarias
-    9070: "Communication Design", # Diseño
-    9085: "Veterinary Nursing", # Ciencias de la salud
-    9119: "Informatics Engineering", # Ciencias exactas
-    9130: "Equinculture", # Ciencias agrarias
-    9147: "Management", # Ciencias exactas
-    9238: "Social Service", # Ciencias Sociales
-    9254: "Tourism", # Ciencias Sociales
-    9500: "Nursing", # Ciencias de la salud
-    9556: "Oral Hygiene", # Ciencias de la salud
-    9670: "Advertising and Marketing Management", # Diseño
-    9773: "Journalism and Communication", # Ciencias sociales
-    9853: "Basic Education", # Ciencias sociales
-    9991: "Management (evening attendance)" # Ciencias exactas
-
-    # Ciencias exactas, Diseño, Ciencias sociales, Ciencias agrarias, Ciencias de la salud
-}
-daytime_dict = {
-    1: "Daytime",
-    0: "Evening"
-}
-#endregion
-"""
 #Función que pasa la predicción según los valores introducidos en el dash
 # def prediccion_dash(ve):
 #     return prediccion_dash_infer(modelo, ve)
@@ -294,6 +261,12 @@ def generate_heatmap (column):  #, hm_click
     )
     return {"data": data, "layout": layout}
 
+#Función que pasa la predicción según los valores introducidos en el dash
+def prediccion_dash(ve):
+
+    return prediccion_dash_infer(modelo, ve)
+
+
 app.layout =  html.Div(
     id="app-container",
     children= [
@@ -376,10 +349,14 @@ def update_output(col_visualization):
     State('desemp_ingles_dropdown', 'value'),
     prevent_initial_call=False
 )
+
 def update_output(n_clicks, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10):
+    
     values = [v1, v2, v3, v4, v5, v6, v7, v8, v9, v10]
-    # prediccion_resultado = prediccion_dash([v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11]) # [clase, probabilidad] 
-    prediccion_resultado = ["High",0.54]
+    
+    prediccion_resultado = prediccion_dash(values) # [clase, probabilidad] 
+    print(prediccion_resultado)
+    #prediccion_resultado = ["High",0.54]
     
     # df_pred = pd.DataFrame({
     #     'course': [v1],

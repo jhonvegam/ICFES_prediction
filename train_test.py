@@ -11,7 +11,6 @@ import metricas as m
 df = pd.read_csv("data_discreta.csv", header = 0, index_col=0, sep=";")
 df = df.astype('category')
 
-
 #División entre Train y Test
 train, test = train_test_split(df, test_size=0.2, random_state=101)
 

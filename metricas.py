@@ -21,11 +21,12 @@ def metricas_modelo(test, pred, nombre_mod):
 
     precision = precision_score(test.loc[:, "target"], pred, labels=["Low", "Medium", "High", "Very High"], average=None)
     print("\nExactitud (Precision): ", precision)
+    
 
     # # ------- CURVA ROC ----------------------------------------------------------------------------------------------------------------
 
     # # Crear un diccionario de mapeo de etiquetas a valores numéricos
-    # label_mapping = {"Graduate": 1, "Enrolled": 0, "Dropout": 0}
+    # label_mapping = {"Low": 0, "Medium": 0, "Dropout": 0}
 
     # # Aplicar el mapeo para convertir las etiquetas en valores numéricos
     # pred_numeric = [label_mapping[label] for label in pred]
