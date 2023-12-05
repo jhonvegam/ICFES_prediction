@@ -2,8 +2,8 @@
 # Estimando la estructura de un modelo a partir de datos: puntajes
 #---------------------------------------------------------------------------------------
 import pandas as pd
-from infer import prediccion_dash_infer
-from infer import inferencia
+from despliegue.infer import prediccion_dash_infer
+from despliegue.infer import inferencia
 import metricas as m
 
 from pgmpy.estimators import PC
@@ -74,7 +74,7 @@ print(structure_score(modelo, df_fit, scoring_method="k2"))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 import pickle
 
-filename='serializacion/modelo3-PC.pkl'
+filename='serializacion/modelo-PC.pkl'
 with open(filename,'wb') as file:
     pickle.dump(modelo, file)
     file.close()

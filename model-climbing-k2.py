@@ -5,8 +5,8 @@ import pandas as pd
 from pgmpy.estimators import HillClimbSearch
 from pgmpy.estimators import K2Score
 
-from infer import inferencia
-from infer import prediccion_dash_infer
+from despliegue.infer import inferencia
+from despliegue.infer import prediccion_dash_infer
 import metricas as m
 
 df = pd.read_csv("train.csv", sep = ";")
@@ -77,13 +77,9 @@ print(structure_score(modelo, df_fit, scoring_method="bic"))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 import pickle
 
-filename='serializacion/modelo2-k2.pkl'
+filename='serializacion/modelo-k2.pkl'
 with open(filename,'wb') as file:
     pickle.dump(modelo, file)
     file.close()
 
 print("prueba")
-
-
-diccionario = ["OFICIAL","No","A","UNICA","No","Estrato 1 y 2","Si","No","<= 25","A2"]
-print(prediccion_dash_infer(modelo, test_fit, diccionario))

@@ -21,6 +21,7 @@ def metricas_modelo(test, pred, nombre_mod):
 
     precision = precision_score(test.loc[:, "target"], pred, labels=["Low", "Medium", "High", "Very High"], average=None)
     print("\nExactitud (Precision): ", precision)
+    
 
     # # ------- CURVA ROC ----------------------------------------------------------------------------------------------------------------
 

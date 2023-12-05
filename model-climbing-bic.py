@@ -5,7 +5,7 @@ import pandas as pd
 from pgmpy.estimators import HillClimbSearch
 from pgmpy.estimators import BicScore
 
-from infer import inferencia
+from despliegue.infer import inferencia
 import metricas as m
 
 df = pd.read_csv("train.csv", sep = ";")
@@ -39,11 +39,11 @@ print(scoring_method.score(estimated_modelh))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #grafo = list(estimated_modelh.edges())
-grafo = [('cole_naturaleza', 'cole_jornada'), ('cole_naturaleza', 'cole_calendario'), ('cole_naturaleza', 'fami_tienecomputador'), ('cole_calendario', 'desemp_ingles'), ('cole_calendario', 'cole_bilingue'), ('cole_jornada', 'desemp_ingles'), ('cole_jornada', 'cole_bilingue'), ('cole_jornada', 'cole_calendario'), ('cole_jornada', 'target'), ('fami_estratovivienda', 'cole_naturaleza'), ('fami_estratovivienda', 'fami_tienecomputador'), ('fami_estratovivienda', 'fami_tieneinternet'), ('fami_estratovivienda', 'estu_edad_cat'), ('fami_tieneinternet', 'fami_tieneautomovil'), ('fami_tienecomputador', 'fami_tieneinternet'), ('fami_tienecomputador', 'fami_tieneautomovil'), ('estu_edad_cat', 'cole_jornada'), ('estu_edad_cat', 'fami_tieneautomovil'), ('desemp_ingles', 'target'), ('desemp_ingles', 'fami_tienecomputador'), ('desemp_ingles', 'fami_tieneinternet'), ("fami_estratovivienda","fami_tienecomputador"),("fami_estratovivienda","fami_tieneinternet")]
+#grafo = [('cole_naturaleza', 'cole_jornada'), ('cole_naturaleza', 'cole_calendario'), ('cole_naturaleza', 'fami_tienecomputador'), ('cole_calendario', 'desemp_ingles'), ('cole_calendario', 'cole_bilingue'), ('cole_jornada', 'desemp_ingles'), ('cole_jornada', 'cole_bilingue'), ('cole_jornada', 'cole_calendario'), ('cole_jornada', 'target'), ('fami_estratovivienda', 'cole_naturaleza'), ('fami_estratovivienda', 'fami_tienecomputador'), ('fami_estratovivienda', 'fami_tieneinternet'), ('fami_estratovivienda', 'estu_edad_cat'), ('fami_tieneinternet', 'fami_tieneautomovil'), ('fami_tienecomputador', 'fami_tieneinternet'), ('fami_tienecomputador', 'fami_tieneautomovil'), ('estu_edad_cat', 'cole_jornada'), ('estu_edad_cat', 'fami_tieneautomovil'), ('desemp_ingles', 'target'), ('desemp_ingles', 'fami_tienecomputador'), ('desemp_ingles', 'fami_tieneinternet'), ("fami_estratovivienda","fami_tienecomputador"),("fami_estratovivienda","fami_tieneinternet")]
 
 
 from pgmpy.models import BayesianNetwork
-modelo = BayesianNetwork(grafo)
+modelo = BayesianNetwork(list(estimated_modelh.edges()))
 
 nodos_fit = list(estimated_modelh.nodes())
 #nodos_fit.pop(1) # -----> Tuve que eliminar la variable (previous qualification (grade)) porque estaba entre los nodos pero no se encontraba dentro de las relaciones y salia un error
