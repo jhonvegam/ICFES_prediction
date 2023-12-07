@@ -1,0 +1,16 @@
+artifact_uri: ./mlruns/5/608f1d724cef431b89f0cf3f22a5f6ce/artifacts
+deleted_time: 1701806153412
+end_time: 1701804617451
+entry_point_name: ''
+experiment_id: '5'
+lifecycle_stage: deleted
+run_id: 608f1d724cef431b89f0cf3f22a5f6ce
+run_name: luxuriant-bug-762
+run_uuid: 608f1d724cef431b89f0cf3f22a5f6ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701804372129
+status: 4
+tags: []
+user_id: jgvm

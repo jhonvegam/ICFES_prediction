@@ -1,0 +1,6 @@
+artifact_location: ./mlruns/7
+creation_time: 1701808007033
+experiment_id: '7'
+last_update_time: 1701808007033
+lifecycle_stage: active
+name: sklearn-Hibrido-2

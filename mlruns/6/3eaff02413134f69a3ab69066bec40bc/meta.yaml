@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/6/3eaff02413134f69a3ab69066bec40bc/artifacts
+end_time: 1701807527689
+entry_point_name: ''
+experiment_id: '6'
+lifecycle_stage: active
+run_id: 3eaff02413134f69a3ab69066bec40bc
+run_name: valuable-penguin-22
+run_uuid: 3eaff02413134f69a3ab69066bec40bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701807498298
+status: 3
+tags: []
+user_id: jgvm

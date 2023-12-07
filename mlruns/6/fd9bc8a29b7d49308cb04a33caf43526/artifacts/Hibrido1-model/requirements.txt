@@ -1,0 +1,6 @@
+mlflow
+cloudpickle==2.0.0
+ipython==8.2.0
+pgmpy==0.1.24
+psutil==5.8.0
+scikit-learn==1.0.2

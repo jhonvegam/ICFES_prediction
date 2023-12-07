@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/5/28f76588b8184656b789da7b7896e4d2/artifacts
+end_time: 1701805988966
+entry_point_name: ''
+experiment_id: '5'
+lifecycle_stage: active
+run_id: 28f76588b8184656b789da7b7896e4d2
+run_name: powerful-ram-552
+run_uuid: 28f76588b8184656b789da7b7896e4d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701805482488
+status: 3
+tags: []
+user_id: jgvm

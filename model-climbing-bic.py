@@ -83,7 +83,7 @@ print(structure_score(modelo, df_fit, scoring_method="k2"))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 import pickle
 
-filename='serializacion/modelo2-bic.pkl'
+filename='despliegue/serializacion/modelo2-bic.pkl'
 with open(filename,'wb') as file:
     pickle.dump(modelo, file)
     file.close()

@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/4/15cfb4a87e134680a3534a0dccfc3e6d/artifacts
+end_time: 1701807185308
+entry_point_name: ''
+experiment_id: '4'
+lifecycle_stage: active
+run_id: 15cfb4a87e134680a3534a0dccfc3e6d
+run_name: sassy-shad-16
+run_uuid: 15cfb4a87e134680a3534a0dccfc3e6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701807129523
+status: 3
+tags: []
+user_id: jgvm
