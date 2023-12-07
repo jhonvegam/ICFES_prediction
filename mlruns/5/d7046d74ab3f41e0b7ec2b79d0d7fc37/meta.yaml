@@ -1,0 +1,16 @@
+artifact_uri: ./mlruns/5/d7046d74ab3f41e0b7ec2b79d0d7fc37/artifacts
+deleted_time: 1701806153413
+end_time: 1701804285750
+entry_point_name: ''
+experiment_id: '5'
+lifecycle_stage: deleted
+run_id: d7046d74ab3f41e0b7ec2b79d0d7fc37
+run_name: bustling-vole-915
+run_uuid: d7046d74ab3f41e0b7ec2b79d0d7fc37
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701804285667
+status: 4
+tags: []
+user_id: jgvm

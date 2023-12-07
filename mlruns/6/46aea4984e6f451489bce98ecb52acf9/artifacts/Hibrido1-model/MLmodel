@@ -1,0 +1,17 @@
+artifact_path: Hibrido1-model
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.0.2
+mlflow_version: 1.30.0
+model_uuid: bb76543615de494f8306ac730282e0bd
+run_id: 46aea4984e6f451489bce98ecb52acf9
+utc_time_created: '2023-12-05 20:05:21.146875'

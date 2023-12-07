@@ -1,0 +1,16 @@
+artifact_uri: ./mlruns/5/605c84f1818e403ab73710b6ebce65ae/artifacts
+deleted_time: 1701806153411
+end_time: 1701805352022
+entry_point_name: ''
+experiment_id: '5'
+lifecycle_stage: deleted
+run_id: 605c84f1818e403ab73710b6ebce65ae
+run_name: skillful-tern-354
+run_uuid: 605c84f1818e403ab73710b6ebce65ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701804951152
+status: 4
+tags: []
+user_id: jgvm

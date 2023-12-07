@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/6/46aea4984e6f451489bce98ecb52acf9/artifacts
+end_time: 1701806729642
+entry_point_name: ''
+experiment_id: '6'
+lifecycle_stage: active
+run_id: 46aea4984e6f451489bce98ecb52acf9
+run_name: unequaled-elk-634
+run_uuid: 46aea4984e6f451489bce98ecb52acf9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701806676153
+status: 3
+tags: []
+user_id: jgvm

@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/4/17caff52dca8431ebc90b8be0bdda881/artifacts
+end_time: 1701806258694
+entry_point_name: ''
+experiment_id: '4'
+lifecycle_stage: active
+run_id: 17caff52dca8431ebc90b8be0bdda881
+run_name: adorable-carp-229
+run_uuid: 17caff52dca8431ebc90b8be0bdda881
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701806185077
+status: 4
+tags: []
+user_id: jgvm

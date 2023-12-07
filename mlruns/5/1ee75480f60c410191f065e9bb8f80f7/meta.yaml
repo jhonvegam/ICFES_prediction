@@ -1,0 +1,16 @@
+artifact_uri: ./mlruns/5/1ee75480f60c410191f065e9bb8f80f7/artifacts
+deleted_time: 1701806153414
+end_time: 1701804327774
+entry_point_name: ''
+experiment_id: '5'
+lifecycle_stage: deleted
+run_id: 1ee75480f60c410191f065e9bb8f80f7
+run_name: beautiful-moose-225
+run_uuid: 1ee75480f60c410191f065e9bb8f80f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701804306094
+status: 4
+tags: []
+user_id: jgvm
